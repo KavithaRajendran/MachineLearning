@@ -1,3 +1,6 @@
+/* 
+* Description: Cluster centroid initialization, re-assigment is done
+* Author: Kavitha Rajendran */
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
