@@ -1,8 +1,8 @@
 /*********************************************************************************************
  *  Description: Building Decision Tree using ID3 algorithm & pruning to increase the accuracy
  *  Authors:
- *          Kavitha Rajendran - kxr161830
- *          Sanjana           - sxh164030
+ *          Kavitha Rajendran
+ *          Sanjana           
  *********************************************************************************************/
 
 import java.io.BufferedReader;
