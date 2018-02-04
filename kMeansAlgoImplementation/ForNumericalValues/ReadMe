@@ -1,0 +1,7 @@
+Language: java
+
+How to compile:
+javac KMeanAlgo.java
+
+How to RUN:
+java KMeanAlgo <numberOfClusters> <input-file-name> <output-file-name>
