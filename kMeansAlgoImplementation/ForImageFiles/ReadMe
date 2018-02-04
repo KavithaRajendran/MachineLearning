@@ -1,0 +1,7 @@
+How to run the code:
+python part3.py <numberOfCluster>
+python part3.py 8
+
+Note:
+Keep both source file "part3.py" and "inputImages" folders in same path.
+output folder will be created in same path with the name "clusteredImages"
