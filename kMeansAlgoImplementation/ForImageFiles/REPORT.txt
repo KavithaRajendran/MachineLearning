@@ -1,0 +1,22 @@
+Language: Python
+
+Tools/Packages: OpenCV
+
+Input Parameters used: 
+samples (Of np.float32 data type)
+nclusters(K) : Number of clusters required at end
+criteria : Iteration termination criteria. It has 3 flags as below:
+	cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER
+	max_iter = 10
+	epsilon  = 1.0
+
+Output Parameters used:
+compactness,labels,centers
+
+How to run the code:
+python part3.py <numberOfCluster>
+python part3.py 8
+
+Note:
+Keep both source file "part3.py" and "inputImages" folders in same path.
+output folder will be created in same path with the name "clusteredImages"
