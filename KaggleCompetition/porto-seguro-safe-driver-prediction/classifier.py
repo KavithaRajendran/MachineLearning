@@ -53,10 +53,8 @@ def gini_xgb(preds, dtrain):
     gini_score = eval_gini(labels, preds)
     return [('gini', gini_score)]
 
-print("hii5")
 df = pd.read_csv("../input/train.csv")
 df_test = pd.read_csv("../input/test.csv")
-print("hii4")
 
 df_majority=df[df.target==0]
 df_minority=df[df.target==1]
@@ -103,12 +101,10 @@ X = pca.fit_transform(df_norm)
 
 X_test_1 = pca.fit_transform(X_test_new)
 
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.10)
-
-print("hii")
+from sklearn.model_selection import train_test_split 
 from xgboost import XGBClassifier
-print("hii7")
+
+X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.10)
 n_estimators = 200
 clf = XGBClassifier(n_estimators=n_estimators,
                         max_depth=4,
@@ -121,13 +117,8 @@ clf = XGBClassifier(n_estimators=n_estimators,
                         reg_lambda=1,
                         nthread=2)
 
-
-
-
-print("hii3")
 # Fit the best algorithm to the data. 
 clf.fit(X_train, y_train)
-print("hii5")
 
 #predictions = clf.predict(X_test)
 predictions_prob = clf.predict_proba(X_test)
