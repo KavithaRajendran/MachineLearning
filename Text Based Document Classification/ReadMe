@@ -1,0 +1,11 @@
+How to execute:
+java naive <trainingDataFilePath> <testDataFilePath>
+
+Note:
+For preprocessing we used the stop words containing around 127 stop words and removed these words from the training documents and testing documents.
+List of 5 classes taken:
+comp.sys.ibm.pc.hardware
+comp.sys.mac.hardware
+rec.sport.hockey
+sci.electronics
+soc.religion.christian
