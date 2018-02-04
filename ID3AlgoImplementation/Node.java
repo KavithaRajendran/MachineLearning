@@ -1,8 +1,8 @@
 /***************************************************
  *  Description: Node structure of Decision Tree
  *  Authors:
- *          Kavitha Rajendran - kxr161830
- *          Sanjana           - sxh164030
+ *          Kavitha Rajendran 
+ *          Sanjana           
  ***************************************************/
 public class Node {
     String featureName;
